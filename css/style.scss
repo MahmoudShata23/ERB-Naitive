@@ -6,11 +6,3 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("assets/fonts/RobotoSerif-VariableFont_GRAD_opsz_wdth_wght.woff") format("woff");
-}
-body {
-  font-family: "Inter", sans-serif;
-}

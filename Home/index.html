@@ -8,67 +8,120 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../assets/bootstrap-5/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/all.min.css">
-  <script src="../assets/bootstrap-5/js/bootstrap.js"></script>
-  <script src="../assets/bootstrap-5/js/bootstrap.min.js"></script>
+
+
+
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <header class="p-1 mb-3 header-style">
+    <div class="container-fluid ">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg> -->
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <!-- <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Products</a></li> -->
+        </ul>
+        <i class="fa-solid fa-clock  position-relative icon-notification">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger badge-font_size">
+            1
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </i>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            <span>Azouz</span>
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="card">
-          111111
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card">
-          111111
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card">
-          111111
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card">
-          111111
         </div>
       </div>
     </div>
+  </header>
+
+  <div class="container mt-5">
+    <div class=" d-flex flex-wrap justify-content-lg-start justify-content-center  w-75 mb-3 m-auto">
+      <a href="../accounting/index.html" class="text-decoration-none text-dark">
+        <div class=" ps-5 pe-5 text-center box-hover">
+          <div class="card d-flex justify-content-center align-items-center  icons-grid">
+            <!-- <i class="fa-solid fa-clock "></i> -->
+            <lord-icon src="153-bar-chart-growth-flat-edited.json" trigger="hover"
+              style="width:70px;height:70px"></lord-icon>
+          </div>
+          <label class="mb-5">Accountant</label>
+        </div>
+      </a>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid ">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+      <div class=" ps-5 pe-5 text-center box-hover">
+        <div class="card d-flex justify-content-center align-items-center p-3 icons-grid">
+          <i class="fa-solid fa-clock "></i>
+        </div>
+        <label for="" class="mb-5">Clock</label>
+      </div>
+    </div>
   </div>
-
-
-
+  <script src="../assets/bootstrap-5/js/bootstrap.js"></script>
+  <script src="../assets/bootstrap-5/js/bootstrap.min.js"></script>
+  <script src="../assets/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+  <script src="../popper.js"></script>
   <script src="script.js"></script>
 </body>
 

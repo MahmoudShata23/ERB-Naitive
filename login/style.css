@@ -51,6 +51,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translate(0);
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 *,
 *::after,
 *::before {
@@ -60,7 +71,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 90%;
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -98,8 +109,12 @@ body {
   color: #fff;
 }
 
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("../../assets/fonts/RobotoSerif-VariableFont_GRAD_opsz_wdth_wght.woff") format("woff");
+}
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif !important;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -122,9 +137,9 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
   /*
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-  */
+      animation-delay: 3s;
+      animation-iteration-count: 3;
+      */
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary--main {
@@ -216,14 +231,6 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
-}
-
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("assets/fonts/RobotoSerif-VariableFont_GRAD_opsz_wdth_wght.woff") format("woff");
-}
-body {
-  font-family: "Inter", sans-serif;
 }
 
 .form-signin {
