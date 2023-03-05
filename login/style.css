@@ -71,7 +71,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 html {
-  font-size: 90%;
+  font-size: 62.5%;
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -125,7 +125,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+          backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 .heading-primary--main {
@@ -233,18 +233,14 @@ body {
   margin-top: 10rem !important;
 }
 
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("assets/fonts/RobotoSerif-VariableFont_GRAD_opsz_wdth_wght.woff") format("woff");
-}
-body {
-  font-family: "Inter", sans-serif;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/images/delicate-silk.jpg");
 }
 
 .login {
@@ -360,4 +356,9 @@ h1 {
 
 .fa-twitter {
   color: dodgerblue;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.test {
+  color: red;
+  background-color: wheat;
+}/*# sourceMappingURL=style.css.map */
