@@ -125,7 +125,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 .heading-primary--main {
@@ -233,34 +233,131 @@ body {
   margin-top: 10rem !important;
 }
 
-.form-signin {
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url("assets/fonts/RobotoSerif-VariableFont_GRAD_opsz_wdth_wght.woff") format("woff");
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login {
+  height: 80vh;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px 5px rgba(106, 175, 230, 0.75);
+  overflow: auto;
+}
+
+.login_image {
+  height: 100%;
   width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
 }
 
-.form-signin .checkbox {
-  font-weight: 400;
+.login_image img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+h3,
+p,
+h1 {
+  font-family: "Inter", sans-serif;
 }
 
-.form-signin input[type=email] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.form-signin {
+  height: 100%;
+  width: 50%;
+  padding: 4rem;
 }
 
-.form-signin input[type=password] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.input-field {
+  height: 4rem;
+  width: 80%;
+  border: 1px solid rgb(202, 198, 200);
+  outline: none;
+  padding: 0.5rem 4rem;
+  margin-top: 1rem;
+  font-size: medium;
+  border-radius: 2rem;
 }
 
-.test {
+.input-field:focus {
+  border: 0.1rem solid #6aafe6;
+  height: 4.3rem;
+  width: 80.5%;
+}
+
+.icon {
+  position: absolute;
+  padding: 2rem;
+  color: rgb(165, 157, 157);
+}
+
+.p1 {
+  padding: 2rem 0;
+  color: rgb(165, 157, 157);
+}
+
+.sign-in-button {
+  height: 4rem;
+  width: 80%;
+  border: none;
+  outline: none;
+  margin: 2rem 0;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #6aafe6;
+  transition: all 0.4s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #03a6ff;
+}
+
+.links {
+  display: inline-flex;
+}
+
+.circle {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: white;
+  margin: 3rem 1rem;
+  cursor: pointer;
+  padding: 1.2rem;
+  box-shadow: 0px 0px 9px 3px rgba(106, 175, 230, 0.75);
+}
+
+.fa-facebook-f {
+  color: blue;
+}
+
+.fa-google {
+  color: navy;
+}
+
+.fa-instagram {
   color: red;
-  background-color: wheat;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.fa-twitter {
+  color: dodgerblue;
+} /*# sourceMappingURL=style.css.map */
