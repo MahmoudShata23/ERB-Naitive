@@ -7,38 +7,23 @@
 @import "base/typography";
 @import "base/utilities";
 
+// Global
+.transparent {
+  background-color: transparent !important;
+}
+
+// End Global
+
 // Home Page
 
 body {
-  // background: $primary-color; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(
-  //   to right,
-  //   $secondary-color,
-  //   $primary-color
-  // ); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(
-  //   to right,
-  //   $secondary-color,
-  //   $primary-color
-  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  // background: linear-gradient(
-  //   -45deg,
-  //   $secondary-color,
-  //   #6aafe696,
-  //   $secondary-color-light,
-  //   #6aafe696
-  // );
-  // background: black;
-  // background-size: 400% 400%;
-  // animation: gradient 15s ease infinite;
+  font-size: $default-font-size !important;
+  background-image: url("/assets/images/delicate-silk.jpg");
   height: 100vh;
   padding: 0;
 }
 .header-style {
-  background-color: rgba(255, 255, 255, 0.251);
-  filter: blur(0px);
-  // backdrop-filter: blur(5px);
-  // filter: blur(5px);
+  @include transparent;
 }
 .icon-notification {
   font-size: 20px;
@@ -76,9 +61,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-image: url("/assets/images/delicate-silk.jpg");
-}
+
 .login {
   height: 80vh;
   width: 70%;
@@ -186,13 +169,83 @@ h1 {
 // End Login Page
 
 // Accounting Page
-
-.icon-notification {
-  font-size: 20px;
-  margin-right: 2rem;
+.sidebar-container {
+  // @include transparent;
+  height: 94.9vh;
+  overflow: auto;
+  width: 280px;
+  // padding-left: 5px;
 }
-.badge-font_size {
-  font-size: 8px !important;
+.sidebar-list_item {
+  padding: 5px 20px !important;
 }
-
+.list-group-item.active {
+  padding: 0.25rem 1rem !important;
+}
+.list-group-item {
+  color: #ffffff !important;
+}
+.list-group-item-action:hover {
+  background-color: rgba(240, 248, 255, 0.179) !important;
+}
+.list-group-item.active > .sidebar-item_span {
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  @include transparent-light;
+}
 // End Accounting Page
+// sidebar
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.btn-toggle {
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform 0.35s ease;
+  transform-origin: 0.5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, 0.85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: $secondary-color;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+// End Sidebar
