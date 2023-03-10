@@ -231,4 +231,194 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+
+body {
+  background: linear-gradient(-45deg, #cadbe9, rgba(106, 175, 230, 0.5882352941), #d4dfe6, rgba(106, 175, 230, 0.5882352941));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  padding: 0;
+}
+
+.header-style {
+  background-color: #d4dfe6;
+}
+
+.icon-notification {
+  font-size: 20px;
+  margin-right: 2rem;
+}
+
+.badge-font_size {
+  font-size: 8px !important;
+}
+
+.icons-grid {
+  font-size: 50px;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none;
+}
+
+.box-hover {
+  cursor: pointer;
+  width: 162.1px;
+  transition: all 0.2s ease;
+}
+.box-hover:hover {
+  transform: scale(1.25);
+}
+.box-hoverlabel:hover {
+  margin: 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/images/delicate-silk.jpg");
+}
+
+.login {
+  height: 80vh;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px 5px rgba(106, 175, 230, 0.75);
+  overflow: auto;
+}
+
+.login_image {
+  height: 100%;
+  width: 100%;
+}
+
+.login_image img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+h3,
+p,
+h1 {
+  font-family: "Inter", sans-serif;
+}
+
+.form-signin {
+  height: 100%;
+  width: 50%;
+  padding: 4rem;
+}
+
+.input-field {
+  height: 4rem;
+  width: 80%;
+  border: 1px solid rgb(202, 198, 200);
+  outline: none;
+  padding: 0.5rem 4rem;
+  margin-top: 1rem;
+  font-size: medium;
+  border-radius: 2rem;
+}
+
+.input-field:focus {
+  border: 0.1rem solid #6aafe6;
+  height: 4.3rem;
+  width: 80.5%;
+}
+
+.icon {
+  position: absolute;
+  padding: 2rem;
+  color: rgb(165, 157, 157);
+}
+
+.p1 {
+  padding: 2rem 0;
+  color: rgb(165, 157, 157);
+}
+
+.sign-in-button {
+  height: 4rem;
+  width: 80%;
+  border: none;
+  outline: none;
+  margin: 2rem 0;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #6aafe6;
+  transition: all 0.4s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #03a6ff;
+}
+
+.links {
+  display: inline-flex;
+}
+
+.circle {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: white;
+  margin: 3rem 1rem;
+  cursor: pointer;
+  padding: 1.2rem;
+  box-shadow: 0px 0px 9px 3px rgba(106, 175, 230, 0.75);
+}
+
+.fa-facebook-f {
+  color: blue;
+}
+
+.fa-google {
+  color: navy;
+}
+
+.fa-instagram {
+  color: red;
+}
+
+.fa-twitter {
+  color: dodgerblue;
+}
+
+.test {
+  color: red;
+  background-color: wheat;
+}
+
+body {
+  background: linear-gradient(-45deg, #cadbe9, rgba(106, 175, 230, 0.5882352941), #d4dfe6, rgba(106, 175, 230, 0.5882352941));
+  background-size: 400% 400%;
+  height: 100vh;
+  padding: 0;
+}
+
+.header-style {
+  background-color: #d4dfe6;
+}
+
+.icon-notification {
+  font-size: 20px;
+  margin-right: 2rem;
+}
+
+.badge-font_size {
+  font-size: 8px !important;
 }/*# sourceMappingURL=style.css.map */
