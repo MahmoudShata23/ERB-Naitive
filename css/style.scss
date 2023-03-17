@@ -7,6 +7,39 @@
 @import "base/typography";
 @import "base/utilities";
 
+// Global
+.transparent-light {
+  @include transparent-light;
+}
+.transparent {
+  @include transparent;
+}
+.input-form {
+  border: 1px solid #ffffff99 !important;
+  color: white !important;
+  font-size: 16px !important;
+}
+.input-form:focus {
+  background-color: var(--bs-form-control-bg);
+  border-color: #d4dfe6bf !important;
+  box-shadow: 0 0 0 0.25rem #cadbe99c !important;
+}
+.input-form::placeholder {
+  border: 0 !important;
+  color: white !important;
+  font-size: 16px !important;
+}
+.radius-addons_left {
+  border-radius: 5px 0 0 5px !important;
+}
+.radius-addons_right {
+  border-radius: 0 5px 5px 0 !important;
+}
+.button-custom {
+  font-size: 14px !important;
+}
+// End Global
+
 // Home Page
 
 body {
@@ -30,14 +63,13 @@ body {
   // );
   // background-size: 400% 400%;
   // animation: gradient 15s ease infinite;
+  font-size: $default-font-size !important;
+  background-image: url("/assets/images/delicate-silk.jpg");
   height: 100vh;
   padding: 0;
 }
 .header-style {
-  background-color: rgba(255, 255, 255, 0.251);
-  filter: blur(0px);
-  // backdrop-filter: blur(5px);
-  // filter: blur(5px);
+  @include transparent;
 }
 .icon-notification {
   font-size: 20px;
@@ -75,9 +107,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  background-image: url("/assets/images/delicate-silk.jpg");
-}
+
 .login {
   height: 80vh;
   width: 70%;
@@ -185,13 +215,125 @@ h1 {
 // End Login Page
 
 // Accounting Page
-
-.icon-notification {
-  font-size: 20px;
-  margin-right: 2rem;
+.sidebar-container {
+  // @include transparent;
+  height: max-content;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 234px;
+  color: #ffffff;
+  direction: rtl;
 }
-.badge-font_size {
-  font-size: 8px !important;
+.sidebar-list_item {
+  padding: 5px 10px !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
 }
-
+.list-group-item.active {
+  padding: 0.25rem 1rem !important;
+}
+.list-group-item {
+  color: #ffffff !important;
+}
+.sidebar-list_item:hover {
+  background-color: rgba(240, 248, 255, 0.179) !important;
+}
+.list-group-item.active > .sidebar-item_span {
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  @include transparent-light;
+}
 // End Accounting Page
+// sidebar
+#sidebar {
+  font-size: 14px;
+  opacity: 1;
+  float: right;
+  transition: all 0.4s ease;
+  &.hide {
+    opacity: 0;
+    width: 0;
+    padding: 0 !important;
+  }
+}
+#small-sidebar {
+  opacity: 1;
+  float: right;
+  transition: all 0.4s ease;
+  &.hide {
+    opacity: 0;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translateX(100);
+  }
+}
+.dropdown-toggle {
+  outline: 0;
+}
+
+.btn-toggle {
+  font-size: 14px !important;
+  padding: 0.25rem 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: rgba(240, 248, 255, 0.179) !important;
+  }
+  &::after {
+    font-family: "FontAwesome";
+    content: "\f104";
+    line-height: 0;
+    transition: transform 0.35s ease;
+    transform-origin: 0.5em 50%;
+    color: #ffffff;
+  }
+  &[aria-expanded="true"] {
+    color: #ffffff;
+  }
+  &[aria-expanded="true"]::after {
+    transform: rotate(-90deg) translateX(4px);
+  }
+}
+.btn-toggle-nav a {
+  padding: 0.1875rem 1.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: rgba(240, 248, 255, 0.179) !important;
+}
+// .nav-pills .nav-link.active {
+//   border-radius: 25px !important;
+// }
+.nav-pills .nav-link {
+  display: block;
+  padding: 5px;
+  width: 61% !important;
+  margin: auto;
+  border-radius: 25px !important;
+  border: 0 !important;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  &.active {
+    background-color: rgba(240, 248, 255, 0.179) !important;
+  }
+  &:hover {
+    width: 100% !important;
+    border-radius: 0 !important;
+    background-color: rgba(240, 248, 255, 0.179);
+    color: $secondary-color;
+  }
+  &:focus {
+    color: $secondary-color;
+  }
+}
+.tooltip {
+  font-size: 13px !important;
+}
+
+// End Sidebar
