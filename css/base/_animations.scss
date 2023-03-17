@@ -29,6 +29,18 @@
     transform: translate(0);
   }
 }
+@keyframes hideInRight {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
 
 @keyframes moveInBottom {
   0% {
