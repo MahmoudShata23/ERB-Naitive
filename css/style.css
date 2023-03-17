@@ -239,7 +239,8 @@ body {
 }
 
 .header-style {
-  background-color: #d4dfe6;
+  background-color: rgba(255, 255, 255, 0.251);
+  filter: blur(0px);
 }
 
 .icon-notification {
@@ -398,17 +399,6 @@ h1 {
 .test {
   color: red;
   background-color: wheat;
-}
-
-body {
-  background: linear-gradient(-45deg, #cadbe9, rgba(106, 175, 230, 0.5882352941), #d4dfe6, rgba(106, 175, 230, 0.5882352941));
-  background-size: 400% 400%;
-  height: 100vh;
-  padding: 0;
-}
-
-.header-style {
-  background-color: #d4dfe6;
 }
 
 .icon-notification {
