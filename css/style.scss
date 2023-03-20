@@ -200,7 +200,7 @@ h1 {
   height: max-content;
   overflow-y: auto;
   overflow-x: hidden;
-  width: 234px;
+  width: 15rem;
   color: #ffffff;
   direction: rtl;
 }
@@ -251,7 +251,6 @@ h1 {
 .dropdown-toggle {
   outline: 0;
 }
-
 .btn-toggle {
   font-size: 14px !important;
   padding: 0.25rem 0.5rem;
@@ -314,6 +313,9 @@ h1 {
 }
 .tooltip {
   font-size: 13px !important;
+}
+.card-content {
+  // @include transparent;
 }
 
 // End Sidebar

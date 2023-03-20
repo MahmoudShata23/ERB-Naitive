@@ -1,28 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../assets/bootstrap-5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/bootstrap-5/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/all.min.css">
-  <script src="../assets/bootstrap-5/js/bootstrap.js"></script>
-  <script src="../assets/bootstrap-5/js/bootstrap.min.js"></script>
+
   <title>Document</title>
 </head>
 
 <body>
+  <header class="p-1 header-style mb-3">
+    <div class="container-fluid ">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+        <a id="toggle-sidebar" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <i class="fa-solid fa-bars"></i>
+          <span>&nbsp; ERP</span>
+        </a>
+        <!-- <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Overview</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+        </ul> -->
 
-  sadfdsgf
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-clock  position-relative icon-notification">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger badge-font_size">
+              1
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </i>
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              <span>Azouz</span>
+            </a>
+            <ul class="dropdown-menu text-small">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <section id="sidebar" class="flex-shrink-0 p-3 pt-0  sidebar-container me-auto">
+    <div class="d-inline-flex">
+      <!-- <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi pe-none me-2" width="30" height="24">
+        <use xlink:href="#bootstrap" />
+      </svg>
+      <span class="fs-5 fw-semibold">Collapsible</span>
+      </a> -->
+      <ul class="list-unstyled ps-0">
 
+        <li class="mb-1">
+          <button class="btn  d-inline-flex align-items-center rounded-pill border-0 sidebar-list_item">
+            Home
+          </button>
+
+        </li>
+
+        <li class="mb-1">
+          <button class="btn  d-inline-flex align-items-center rounded-pill border-0  sidebar-list_item">
+            Dashboard
+          </button>
+
+        </li>
+        <li class="mb-1">
+          <button class="btn  d-inline-flex align-items-center rounded-pill border-0  sidebar-list_item">
+            Orders
+          </button>
+
+        </li>
+        <li class="mb-1">
+          <button
+            class="btn btn-toggle d-inline-flex align-items-center rounded-pill border-0 collapsed sidebar-list_item"
+            data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            <span class="pe-4">Account</span>
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">New...</a></li>
+              <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">Profile</a></li>
+              <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">Settings</a></li>
+              <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">Sign out</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="b-example-divider b-example-vr "></div>
+  <div id="small-sidebar" class="d-flex flex-column flex-shrink-0 pt-3 bg-transparent hide" style="width: 7.5rem;">
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center bg-transparent">
+      <li>
+        <a href="#" class="nav-link active py-3 border-bottom rounded-0 " aria-current="page" title="Home"
+          data-bs-toggle="tooltip" data-bs-placement="right">
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom rounded-0 " title="Dashboard" data-bs-toggle="tooltip"
+          data-bs-placement="right">
+          <i class="fas fa-th"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom rounded-0 " title="Orders" data-bs-toggle="tooltip"
+          data-bs-placement="right">
+          <i class="fas fa-tv"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom rounded-0 " title="Products" data-bs-toggle="tooltip"
+          data-bs-placement="right">
+          <i class="fas fa-truck-moving"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link py-3 border-bottom rounded-0 " title="Customers" data-bs-toggle="tooltip"
+          data-bs-placement="right">
+          <i class="fas fa-thumbtack"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="card card-content m-2">
+    <div class="card-body row d-flex ">
+      <div class="col-lg-9 d-flex justify-content-end">sssss</div>
+      <div class="col-lg-3 d-flex justify-content-end">
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded-pill border-0 collapsed sidebar-list_item"
+              data-bs-toggle="collapse" data-bs-target="#folder-collapse" aria-expanded="false">
+              <span class="pe-4">Account</span>
+            </button>
+            <div class="collapse" id="folder-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded-pill">New...</a>
+                </li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded-pill">Profile</a>
+                </li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded-pill">Settings</a>
+                </li>
+                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded-pill">Sign
+                    out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded-pill border-0 collapsed sidebar-list_item"
+              data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+              <span class="pe-4">Account</span>
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">New...</a></li>
+                <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">Profile</a></li>
+                <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">Settings</a></li>
+                <li><a href="#" class="link-light d-inline-flex text-decoration-none rounded-pill">Sign out</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="/jquery.js" type="text/javascript"></script>
   <script src="/assets/bootstrap-5/js/popper.min.js" type="text/javascript"></script>
   <script src="/assets/bootstrap-5/js/bootstrap.js" type="text/javascript"></script>
-  <script src="script.js" type="text/javascript"></script>
+  <script src="/script.js" type="text/javascript"></script>
 </body>
 
 </html>
