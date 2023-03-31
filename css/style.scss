@@ -544,6 +544,7 @@ body {
   border: none !important;
   font-size: 1.8rem;
 }
+// user profile
 .userProfileLabel
 {
   font-size: 1.4rem;
@@ -563,17 +564,15 @@ body {
   background-color: white !important;
   color: gray !important;
 } 
-
-
-
-
-.profile-pic {
+.profile-pic 
+{
     width: 200px;
     max-height: 200px;
     display: inline-block;
 }
 
-.file-upload {
+.file-upload 
+{
     display: none;
 }
 .circle-profile-pic {
@@ -607,3 +606,4 @@ img {
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
   color: #999;
 }
+// end user profile
