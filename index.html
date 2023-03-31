@@ -14,12 +14,70 @@
 </head>
 
 <body>
-
   <a href="login/index.html">login</a>
+  <div class="inputs pt-3">
+    <div class="row paragraph">
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
+          <input type="email" class="form-control input-form transparent" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label text-light">Example textarea</label>
+          <textarea class="form-control input-form transparent-light " id="exampleFormControlTextarea1"
+            rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label text-light">Default file input example</label>
+          <input class="form-control transparent input-form" type="file" id="formFile">
+        </div>
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-light radius-addons_left button-custom" type="button"
+            id="button-addon1">Button</button>
+          <input type="text" class="form-control input-form radius-addons_right" placeholder=""
+            aria-label="Example text with button addon" aria-describedby="button-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control input-form radius-addons_left" placeholder="Recipient's username"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-light radius-addons_right button-custom" type="button"
+            id="button-addon2">Button</button>
+        </div>
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-light dropdown-toggle radius-addons_left button-custom" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input type="text" class="form-control input-form radius-addons_right"
+            aria-label="Text input with dropdown button">
+        </div>
 
-  <p>If you click on me, I will disappear.</p>
-  <p>Click me away!</p>
-  <p>Click me too!</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control input-form radius-addons_left"
+            aria-label="Text input with dropdown button">
+          <button class="btn btn-outline-light dropdown-toggle radius-addons_right button-custom" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
     $(document).ready(function () {
       $("p").click(function () {
