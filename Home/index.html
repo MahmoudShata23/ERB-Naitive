@@ -50,52 +50,117 @@
     </div>
     <div id="profileNav" class="sidenav">
       <div class="row p-4">
-        <div class="col-4">
-          <div class="white-card">
-            <img src="https://github.com/mdo.png" class="rounded-circle p-1 border border-1 w-100 profile-img"
-              alt="profile-photo">
-            <div class="profile-img_layout">
-              <div class="">
-                <i class="fs fa-camera"></i>
-                <span>Upload Photo</span>
+        <div class="col-lg-4  col-md-4  col-sm-12 pt-3">
+          <div class="white-card pt-5 pb-5">
+                <div class="circle-profile-pic">
+                  <img class="profile-pic" src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg">
+           
+                </div>
+                <div class="p-image">
+                  <i class="fa fa-camera upload-button"></i>
+                   <input class="file-upload" type="file" accept="image/*"/>
+                </div>
+          </div>
+           
+          <div class="white-card mt-5 d-flex justify-content-start ">
+            <div class="">
+              <h2>Things I like </h2>
+              <hr>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta quis 
+                dolorem quia officiis fugit nihil libero, enim velit sunt qui nam
               </div>
             </div>
+          
           </div>
         </div>
-        <div class="col-8">
+       
+         <div class="col-lg-8  col-md-8 col-sm-12 pt-3">
           <div class="white-card">
-            <form action="" method="post" class="w-100 yg ">
-              <h2>المعلومات الشخصية</h2>
+            <div class="w-100 yg  ">
+              <div class="profile-header d-flex justify-content-between ">
+                <h2>Contact Information </h2>
+                <button class="toggle-edit-user btn btn-outline-secondary">Edit </button>
+
+              </div>
               <hr>
-              <div class="mb-3 row">
-                <label for="inputfirstName" class="col-sm-2 ">First Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputfirstName">
-                </div>
+              <div class="form-show-data">
+                
+              <div class="my-3 col-sm-12">
+                <label class="userProfileLabel"> First Name </label>
+                <input type="text" class="form-control p-0 user-info disabled" disabled="disabled"value="nourhan"/>
               </div>
-              <div class="mb-3 row">
-                <label for="inputLastName" class="col-sm-2 ">Last Name</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputLastName">
-                </div>
+              <div class="my-3 col-sm-12">
+                <label class="userProfileLabel"> Last Name </label>
+                <input type="text" class="form-control p-0 user-info disabled" disabled="disabled" value="Elnaggar"/>
               </div>
-              <div class="mb-3 row">
-                <label for="inputEmail" class="col-sm-2 ">Email</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputEmail">
-                </div>
+              <div class="my-3  col-sm-12">
+                <label class="userProfileLabel" >Contact Email </label>
+                <input type="text" class="form-control p-0 user-info disabled" disabled="disabled"value="nourhan@gmail-com" />
               </div>
-              <div class="mb-3 row">
-                <label for="inputPassword" class="col-sm-2 ">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword">
-                </div>
+              <div class="my-3  col-sm-12">
+                <label class="userProfileLabel">phone </label>
+                <input type="text"  class="form-control p-0  user-info" disabled="disabled" value="01147783654"/>
               </div>
+              <div class="my-3 col-sm-12">
+                <label class="userProfileLabel">Address </label>
+                <input type="text"class="form-control p-0 user-info" disabled="disabled"value="maserElqdema"/>
+              </div>
+           
+            </div>
+            <div id="editForm">
+                
+              <form action="#" method="post">
+                <div class="">
+                  <label class=" ">First Name </label>
+                  <input type="text"class="form-control mb-3 p-2"/>
+                </div>
+                <div class="">
+                  <label class=" ">Last Name </label>
+                  <input type="text"class="form-control mb-3 p-2"/>
+                </div>
+              <div class="">
+                <label class=" ">Contact Email </label>
+                <input type="text"class="form-control mb-3 p-2"/>
+              </div>
+              <div class="">
+                <label class=" ">phone </label>
+                <input type="text"class="form-control mb-3 p-2"/>
+              </div>
+              <div class="">
+                <label class=" ">Address </label>
+                <input type="text"class="form-control mb-3 p-2"/>
+              </div>
+              <button type="submit"class="btn btn-outline-secondary"> Submit </button>
             </form>
+               
           </div>
-        </div>
+            </div>
+          </div>
+          <div class="white-card mt-4 d-flex justify-content-start ">
+            <div class="">
+              <h2>About me </h2>
+              <hr>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta quis 
+                dolorem quia officiis fugit nihil libero, enim velit sunt qui nam
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta quis 
+              </div>
+            </div>
+          
+          </div>
+        </div> 
+      </div>
       </div>
     </div>
+
+
+
+
+
+
+
+    
   </section>
   <section id="notify">
     <div id="offcanvas-notify" onclick="openCloseNav('notifyNav','notifyClose','offcanvas-notify')"

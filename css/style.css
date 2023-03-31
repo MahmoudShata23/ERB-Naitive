@@ -775,4 +775,75 @@ body {
 
 .offcanvas-backdrop.show {
   display: block !important;
+}
+
+.form-control:disabled {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  border: none !important;
+  font-size: 1.8rem;
+}
+
+.userProfileLabel {
+  font-size: 1.4rem;
+  color: #A3B1CB;
+}
+
+#editForm {
+  display: none;
+}
+
+.toggle-edit-user {
+  border: none !important;
+  font-size: bold !important;
+}
+
+.toggle-edit-user:hover {
+  background-color: white !important;
+  color: gray !important;
+}
+
+.profile-pic {
+  width: 200px;
+  max-height: 200px;
+  display: inline-block;
+}
+
+.file-upload {
+  display: none;
+}
+
+.circle-profile-pic {
+  border-radius: 100% !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  border: 2px solid rgba(143, 136, 136, 0.2);
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.p-image {
+  position: relative;
+  top: 85px;
+  right: 30px;
+  color: #666666;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.p-image:hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #999;
 }/*# sourceMappingURL=style.css.map */
