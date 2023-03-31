@@ -64,3 +64,27 @@
     background-position: 0% 50%;
   }
 }
+@keyframes infinityMove {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+@keyframes moveOnHover {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+@keyframes backOnHover {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

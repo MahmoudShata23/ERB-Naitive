@@ -21,6 +21,10 @@
   background-color: rgba(255, 255, 255, 0.611) !important;
   backdrop-filter: blur(1px) !important;
 }
+@mixin transparent-dark {
+  background-color: rgba(61, 61, 61, 0.42) !important;
+  backdrop-filter: blur(1px) !important;
+}
 
 // MEDIA QUERY MANAGER
 /*
