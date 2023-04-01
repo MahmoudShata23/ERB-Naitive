@@ -374,7 +374,7 @@ body {
 // End Accounting Page
 // sidebar
 #sidebar {
-  padding: 1.9rem 1rem 1rem 1rem;
+  padding: 1.9rem 5rem 1rem 1rem;
   font-size: 14px;
   opacity: 1;
   float: left;
@@ -545,65 +545,73 @@ body {
   font-size: 1.8rem;
 }
 // user profile
-.userProfileLabel
-{
+.userProfileLabel {
   font-size: 1.4rem;
-  color: #A3B1CB;
+  color: #a3b1cb;
 }
-#editForm
-{
+#editForm {
   display: none;
 }
-.toggle-edit-user
-{
-  border:none !important;
+.toggle-edit-user {
+  border: none !important;
   font-size: bold !important;
+  transition: all 0.2s ease;
 }
-.toggle-edit-user:hover
-{
+.toggle-edit-user:hover {
   background-color: white !important;
   color: gray !important;
-} 
-.profile-pic 
-{
-    width: 200px;
-    max-height: 200px;
-    display: inline-block;
+}
+.profile-pic {
+  width: 200px;
+  max-height: 200px;
+  display: inline-block;
+}
+.option-row {
+  background-color: #ffffff;
+  bottom: 0;
+  width: 90rem !important;
+  height: 8vh;
+  transform: translateY(100px);
+  transition: all 0.1s ease;
+  &.show {
+    transform: translateY(0px);
+  }
 }
 
-.file-upload 
-{
-    display: none;
+.file-upload {
+  display: none;
 }
 .circle-profile-pic {
-    border-radius: 100% !important;
-    overflow: hidden;
-    width: 128px;
-    height: 128px;
-    border: 2px solid rgba(143, 136, 136, 0.2);
-    position: relative;
-    
+  display: flex;
+  justify-content: center;
+  border-radius: 100% !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  // border: 2px solid rgba(143, 136, 136, 0.2);
+  position: relative;
 }
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 .p-image {
   position: relative;
-  top: 85px;
-  right: 30px;
+  top: 91px;
+  right: 22px;
+  cursor: pointer;
   color: #666666;
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-}
-.p-image:hover {
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  &:hover {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
 }
 .upload-button {
   font-size: 1.2em;
 }
 
 .upload-button:hover {
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   color: #999;
 }
 // end user profile
