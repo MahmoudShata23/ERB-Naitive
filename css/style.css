@@ -1137,4 +1137,133 @@ img {
 
 .jsTreeContextMenu p:hover {
   background-color: rgb(207, 206, 206);
+}
+
+.notification-body {
+  color: white;
+}
+
+.notification-container {
+  width: 90%;
+  margin: auto;
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.singleDiv {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin: 10px;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.251) !important;
+  -webkit-backdrop-filter: blur(1px) !important;
+          backdrop-filter: blur(1px) !important;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 70%;
+}
+
+.leftSide img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.leftSide .text {
+  margin-left: 25px;
+}
+
+.leftSide .text p.title.active {
+  margin-bottom: 7px;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}
+
+.leftSide .text p.title {
+  margin-bottom: 7px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.leftSide .text p {
+  color: white;
+  font-size: 15px;
+}
+
+.rightSide {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.rightSide .showPopup > i {
+  margin-bottom: 10px;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(47, 107, 169, 0.2784313725);
+  transition: 0.3s;
+}
+
+.rightSide .showPopup > i:hover {
+  background-color: rgba(134, 138, 168, 0.3137254902);
+  border: none;
+}
+
+.rightSide > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.infoRight {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.popup {
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 45px;
+  right: 7px;
+  z-index: 1;
+  width: 150px;
+  border: 1px solid rgba(214, 224, 235, 0.2784313725);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.infoRight i {
+  margin-right: 10px;
+}
+
+.infoRight {
+  transition: 0.3s;
+}
+
+.infoRight:hover {
+  background-color: rgba(47, 107, 169, 0.2784313725);
+}
+
+.days-notify {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

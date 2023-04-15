@@ -802,3 +802,151 @@ img {
   background-color: rgb(207 206 206);
 }
 // End Tree
+
+// start notification
+
+.notification-body{
+ // @include transparent;
+ color: white;
+}
+
+.notification-container {
+  width: 90%;
+  margin: auto;
+
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.singleDiv {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin: 10px;
+  border-radius: 2rem;
+  @include transparent;
+  // border-bottom: 1px solid #f0f2f5;
+
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 70%;
+
+}
+
+.leftSide img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+
+}
+
+.leftSide .text {
+  margin-left: 25px;
+
+}
+
+.leftSide .text p.title.active {
+  margin-bottom: 7px;
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.leftSide .text p.title {
+  margin-bottom: 7px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+
+}
+
+.leftSide .text p {
+  color: white;
+  font-size: 15px;
+
+}
+
+.rightSide {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.rightSide .showPopup>i {
+  margin-bottom: 10px;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #2f6ba947;
+  transition: .3s;
+}
+
+.rightSide .showPopup>i:hover {
+
+  background-color: #868aa850;
+  border: none;
+}
+
+.rightSide>p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.infoRight {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+
+
+}
+
+.popup {
+
+  // background-color: #f0f2f5;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 45px;
+  right: 7px;
+  z-index: 0.9999999999999999;
+  width: 150px;
+  border: 1px solid #d6e0eb47;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+}
+
+.popup.active {
+
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.infoRight i {
+  margin-right: 10px;
+
+}
+
+.infoRight {
+  transition: .3s;
+}
+
+.infoRight:hover {
+  background-color: #2f6ba947;
+}
+.days-notify
+{
+  font-size: 14px;
+}
+// End notification page
