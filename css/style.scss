@@ -358,7 +358,7 @@ body {
 #accounting-content {
   color: #000000;
   width: 100%;
-  height: 91.5vh;
+  height: 89.5vh;
   padding: 10px;
   margin: 11px 11px 11px 0;
   border-radius: 15px;
@@ -615,3 +615,190 @@ img {
   color: #999;
 }
 // end user profile
+
+// Start Tree
+#content-tree {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  margin-top: 21px;
+  margin-right: 10px;
+  height: 88vh;
+  width: 100%;
+}
+#tree-accounting {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #000000;
+  margin-top: 21px;
+  margin-right: 10px;
+  & > .container {
+    overflow-y: auto;
+    height: 85vh;
+  }
+}
+#searchInput {
+  background-image: url(icons/icons8-search-24.png);
+  background-position: 9px 7px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 9px 5px 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  &:focus {
+    box-shadow: 0 0 0 1px rgb(0, 102, 255) !important;
+    outline: none;
+  }
+}
+.jsTree {
+  width: max-content;
+}
+.jsTree .itemParent {
+  /* div. more down under */
+  transition: all 0.3s ease-in;
+  padding: 2px 0px;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px 3px 5px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  &.activeLink {
+    background-color: rgb(58, 138, 250);
+    color: #ffffff;
+  }
+}
+.jsTree .itemParent:hover {
+  background-color: rgb(207 206 206);
+  // color: #ffffff;
+  border-radius: 50px;
+}
+.jsTree .itemParent p {
+  margin: 0px;
+  flex-grow: 1;
+}
+.jsTree .itemParent .afterIcon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  margin: 0px 4px;
+  background: url("icons/edit-black.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+.jsTree .itemParent:hover .afterIcon {
+  opacity: 1;
+}
+.jsTree .childGroup {
+  /* ul */
+  padding: 0px 12px 0px 0px;
+  margin: 0;
+}
+
+.jsTree .item {
+  /* li */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in;
+}
+
+.jsTree .itemParent .preIcon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  margin: 0px 4px;
+  background: url("icons/icons8-docket-64.png");
+  background-size: 16px 16px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+.jsTree .itemParent .preIcon.arrowDown {
+  cursor: pointer;
+  background: url("icons/icons8-live-folder-40.png");
+
+  transition: all 0.3s ease-out;
+}
+.jsTree .itemParent .preIcon.arrowDown.arrowRotate {
+  background: url("icons/icons8-folder-40.png") !important;
+  background-size: 16px 16px !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  // transform: rotate(-90deg);
+}
+.jsTree .itemParent .preIcon.checkboxIcon {
+  cursor: pointer;
+  background: url("icons/notselected-black.svg");
+}
+.jsTree .itemParent .preIcon.checkboxIcon.checked {
+  background: url("icons/selected-black.svg");
+}
+.jsTree .itemParent .preIcon.radiobtnIcon {
+  cursor: pointer;
+  background: url("icons/radionotselected-black.svg");
+}
+.jsTree .itemParent .preIcon.radiobtnIcon.checked {
+  background: url("icons/radioselected-black.svg");
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .jsTree .itemParent .preIcon.checkboxIcon:hover {
+    background: url("icons/selected-black.svg");
+  }
+  .jsTree .itemParent .preIcon.radiobtnIcon:hover {
+    background: url("icons/radioselected-black.svg");
+  }
+}
+.jsTreeContextMenu {
+  width: max-content;
+  display: none;
+  position: fixed;
+  border-radius: 1px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid rgb(56 178 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all 0.2s ease;
+  & p {
+    border-radius: 20px;
+    cursor: pointer;
+    background-size: 16px 16px !important;
+    background-repeat: no-repeat !important;
+    background-position: 114px center !important;
+    font-size: smaller;
+    margin: 0;
+    padding: 4px 26px 4px 8px;
+    transition: all 0.3s ease-in;
+    text-align: right;
+  }
+  & p:first-child {
+    content: "";
+    background: url(icons/icons8-add-folder-24.png);
+  }
+  & p:nth-child(2) {
+    content: "";
+    background: url(icons/icons8-add-file-64.png);
+  }
+  & p:last-child {
+    content: "";
+    background: url(icons/icons8-remove-48.png);
+  }
+}
+.jsTreeContextMenu p:hover {
+  background-color: rgb(207 206 206);
+}
+// End Tree
