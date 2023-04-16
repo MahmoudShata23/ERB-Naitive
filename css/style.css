@@ -163,8 +163,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   margin-bottom: 6rem;
 }
 .heading-primary--main {
@@ -896,6 +895,17 @@ body {
   transition: all 0.1s ease;
 }
 .option-row.show {
+  transform: translateY(0px);
+}
+
+.option-row_tree {
+  background-color: #ffffff;
+  bottom: 15px;
+  height: 8vh;
+  transform: translateY(100px);
+  transition: all 0.1s ease;
+}
+.option-row_tree.show {
   transform: translateY(0px);
 }
 

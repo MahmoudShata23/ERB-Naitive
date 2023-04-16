@@ -577,6 +577,17 @@ body {
     transform: translateY(0px);
   }
 }
+.option-row_tree {
+  background-color: #ffffff;
+  bottom: 15px;
+  // width: 100% !important;
+  height: 8vh;
+  transform: translateY(100px);
+  transition: all 0.1s ease;
+  &.show {
+    transform: translateY(0px);
+  }
+}
 
 .file-upload {
   display: none;

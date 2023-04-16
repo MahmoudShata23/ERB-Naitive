@@ -64,6 +64,7 @@ $(document).ready(function () {
 // end user profile
 // Accountant tree
 function onSelectFile(d) {
+  debugger;
   $(".itemParent").removeClass("activeLink");
   $(d.target).parent().addClass("activeLink");
   console.log("do something here");
@@ -99,6 +100,15 @@ function searchOnTree() {
   // }
   // });
 }
+function onSelectName(e) {
+  console.log($(e.target).parent().parent().has("ul")[0]);
+  console.log($(e.target).parent().parent().index());
+  console.log($(e.target).parent().hasClass("itemParent"));
+  if (!$(e.target).parent().parent().has("ul")[0]) {
+    $(e.target).attr("contenteditable", "true");
+  }
+}
+function onCancelTreeChange() {}
 // End Accountant tree
 class DinampTreeEditor {
   mainNode; //selector
@@ -226,13 +236,13 @@ class DinampTreeEditor {
 
     if (parentNode.is("ul") && el.children)
       $newNode = $(
-        `<li class='item'><a class='itemParent'><span class='preIcon'></span><p >${el.title}</p> 
+        `<li class='item'><a class='itemParent'><span class='preIcon'></span><p onClick="onSelectName(event)">${el.title}</p> 
            
           <span class='afterIcon'></span></a></li>`
       );
     else if (parentNode.is("ul") && !el.children) {
       $newNode = $(
-        `<li class='item' onclick="onSelectFile(event)"><a class='itemParent'><span class='preIcon'></span><p >${el.title}</p> 
+        `<li class='item' ><a class='itemParent'><span class='preIcon' onclick="onSelectFile(event)"></span><p onClick="onSelectName(event)">${el.title}</p> 
            
           <span class='afterIcon'></span></a></li>`
       );
@@ -292,9 +302,9 @@ class DinampTreeEditor {
       }
     });
 
-    $(this.mainNode + " p").on("blur", function () {
-      jsTree.options.onchange(jsTree);
-    });
+    // $(this.mainNode + " p").on("blur", function () {
+    //   jsTree.options.onchange(jsTree);
+    // });
     $(this.mainNode + " .preIcon").on("click", function () {
       if ($(this).hasClass("arrowDown") && !$(this).hasClass("arrowRotate")) {
         //children are expanded must retract
@@ -361,10 +371,12 @@ class DinampTreeEditor {
       jsTree.selectedItem = $(this).parent();
     });
     $(".jsTreeContextMenu[ui-uuid='" + this.uuid + "'] p").on("click", function () {
+      debugger;
+      $("#option-row_tree").addClass("show");
       if ($(this).index() == 0) {
         //add inside
         var $newNode = $(
-          "<li class='item'><a class='itemParent'><span class='preIcon'></span><p >New item</p><span class='afterIcon'></span></a></li>"
+          "<li class='item'><a class='itemParent'><span class='preIcon'></span><p contenteditable='true'>New item</p><span class='afterIcon'></span></a></li>"
         );
         if (jsTree.options.maxLevels !== undefined) {
           if (
@@ -390,7 +402,7 @@ class DinampTreeEditor {
         //add after
         if (jsTree.selectedItem.parent().is("li")) {
           var $newNode = $(
-            "<li class='item'><a class='itemParent'><span class='preIcon'></span><p >New item</p><span class='afterIcon'></span></a></li>"
+            "<li class='item'><a class='itemParent'><span class='preIcon'></span><p contenteditable='true'>New item</p><span class='afterIcon'></span></a></li>"
           );
           $newNode.insertAfter(jsTree.selectedItem.parent());
         } else if (

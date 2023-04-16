@@ -337,7 +337,13 @@
           <input type="text" id="searchInput" onkeyup="searchOnTree()" placeholder="Search for names.."
             title="Type in a name">
           <p class="sncdOutput"></p>
-          <div class="scndTree w-100" style="direction: rtl;"></div>
+          <div class="scndTree w-100" style="direction: rtl;">
+          </div>
+          <div class="option-row_tree position-fixed d-flex justify-content-center align-items-center"
+            id="option-row_tree">
+            <button class="btn btn-dark m-2 px-4 py-2 fs-4" onclick="onCancelTreeChange(event)">Cancel</button>
+            <button class="btn btn-success m-2 px-4 py-2 fs-4">Save</button>
+          </div>
         </div>
       </section>
     </div>
